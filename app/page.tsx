@@ -104,7 +104,7 @@ export default function Home() {
             className="p-4 mx-auto xl:mx-0"
             width={807}
             height={600}
-            quality={100}
+            quality={75}
             sizes="(max-width: 1280px) 80vh, 100vh"
             style={{
               width: 'auto',
