@@ -120,7 +120,7 @@ export default function Home() {
         </div>
         <div className="basis-3/5 xl:pr-4 flex flex-col justify-center">
           <div className="text-center xl:text-start flex flex-col">
-            <p className="text-2xl text-foreground xl:text-8xl xl:pr-8">FRONTEND DEVELOPER</p>
+            <p className="text-2xl text-foreground xl:text-8xl xl:pr-8">WEB DEVELOPER</p>
             <Separator className="xl:my-8 my-4" />
             <p className="text-2xl text-foreground xl:text-8xl xl:mr-96">UI/UX DESIGNER</p>
           </div>
@@ -475,7 +475,7 @@ export default function Home() {
 
       <section id="Contact">
         <h1 className="text-4xl font-bold text-center pt-24">Contact me</h1>
-        <div className="xl:w-[40vw] mx-auto text-center p-8"><Form {...form}>
+        <div className="xl:w-[30vw] mx-auto text-center p-8"><Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField
               control={form.control}
