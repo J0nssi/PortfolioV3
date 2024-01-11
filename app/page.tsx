@@ -100,11 +100,12 @@ export default function Home() {
 
       <section className="flex flex-col xl:flex-row">
         <div className="basis-2/5 mt-20 xl:mt-0 h-screen ">
-          <Image src="/j0nssi.PNG" alt="J0nssi"
+          <Image src="/j0nssi.png" alt="J0nssi"
             className="p-4 mx-auto xl:mx-0"
+            placeholder="blur"
             width={807}
             height={600}
-            quality={75}
+            quality={100}
             sizes="(max-width: 1280px) 80vh, 100vh"
             style={{
               width: 'auto',
@@ -191,7 +192,7 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
-                  <DrawerTrigger><Image src="/incoach.PNG" alt="Incoach"
+                  <DrawerTrigger><Image src="/incoach.png" alt="Incoach"
                     className="mx-auto"
                     width={800}
                     height={600}
