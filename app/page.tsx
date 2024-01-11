@@ -88,7 +88,7 @@ export default function Home() {
       .then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
         toast("Email has been sent.")
-        form.control._defaultValues;
+        form.reset();
       }, function (error) {
         console.log('FAILED...', error);
         toast("Something went wrong, please try again later.")
