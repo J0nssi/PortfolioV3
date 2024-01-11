@@ -124,7 +124,6 @@ export default function Home() {
           <div className="flex py-2 gap-2 justify-center xl:justify-start">
             <Button variant={"outline"} className="xl:p-6"><Link href="#Projects" className="xl:text-xl">Projects</Link></Button>
             <Button variant={"outline"} className="xl:p-6"><Link href="#About" className="xl:text-xl">About me</Link></Button>
-            <Button variant={"outline"} className="xl:p-6"><Link href="#Skills" className="xl:text-xl">Skills</Link></Button>
             <Button variant={"outline"} className="xl:p-6"><Link href="#Contact" className="xl:text-xl">Contact</Link></Button>
           </div>
         </div>
@@ -379,7 +378,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pt-24">
+      <section id="About" className="pt-24">
         <h1 className="text-center text-4xl font-bold">About</h1>
         <Tabs defaultValue="about" className="justify-center text-center pt-6">
           <TabsList>
@@ -470,7 +469,7 @@ export default function Home() {
       </section>
 
 
-      <section>
+      <section id="Contact">
         <h1 className="text-4xl font-bold text-center pt-24">Contact me</h1>
         <div className="xl:w-[40vw] mx-auto text-center p-8"><Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
