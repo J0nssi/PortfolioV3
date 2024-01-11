@@ -102,7 +102,6 @@ export default function Home() {
         <div className="basis-2/5 mt-20 xl:mt-0 h-screen ">
           <Image src="/j0nssi.png" alt="J0nssi"
             className="p-4 mx-auto xl:mx-0"
-            placeholder="blur"
             width={807}
             height={600}
             quality={100}
@@ -212,7 +211,7 @@ export default function Home() {
 
                       <div className="p-4 flex flex-col">
                         <div>
-                          <Image src="/incoach.PNG" alt="Incoach"
+                          <Image src="/incoach.png" alt="Incoach"
                             className="mx-auto"
                             width={800}
                             height={600}
@@ -392,7 +391,7 @@ export default function Home() {
               <p className='p-4 text-xl'>For whatever reason you ended up to my portfolio, welcome. I hope you enjoyed browsing it as much as I enjoyed developing it but let me introduce myself now.</p>
               <p className='p-4 text-xl'>It all started when I applied to Savonia UAS in 2019 after working about three years in property maintenance. I got into my Bachelor of Engineering, Information Technology studies and three and half years later I'm near the finish line with my studies.</p>
               <p className='p-4 text-xl'>As a web developer I'm trying to help companies and brands to build their online presence, develop eye-cathing websites and compete in rapidly growing digital landscape.</p>
-              <p className='p-4 text-xl'>In my sparetime, I'm challenging myself compiting in ice hockey or CS2, going to the gym, hanging out with my friends or just relaxing at home.</p>
+              <p className='p-4 text-xl'>In my sparetime, I'm challenging myself competing in ice hockey or CS2, going to the gym, hanging out with my friends or just relaxing at home.</p>
             </div>
           </TabsContent>
 
