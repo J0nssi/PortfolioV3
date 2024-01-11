@@ -100,7 +100,7 @@ export default function Home() {
 
       <section className="flex flex-col xl:flex-row">
         <div className="basis-2/5 mt-20 xl:mt-0 h-screen ">
-          <Image src="/public/static/j0nssi.PNG" alt="J0nssi"
+          <Image src="/j0nssi.PNG" alt="J0nssi"
             className="p-4 mx-auto xl:mx-0"
             width={807}
             height={600}
