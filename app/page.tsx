@@ -130,7 +130,7 @@ export default function Home() {
           <div className="text-center xl:text-start flex flex-col pt-4">
             <p className="text-2xl text-foreground xl:text-8xl">WEB <span className="text-primary">DEVELOPER</span></p>
             <Separator className="xl:my-8 my-4" />
-            <p className="text-2xl text-foreground xl:text-6xl xl:text-end">UI/UX DESIGNER</p>
+            <p className="text-2xl text-foreground xl:text-8xl xl:text-end">UI/UX DESIGNER</p>
           </div>
           <Separator className="xl:my-8 my-4" />
           <ArrowDownCircle data-scroll-to data-scroll-to-href="#Projects" className="animate-bounce mt-12 w-12 h-12 xl:w-24 xl:h-24 mx-auto justify-center" />
