@@ -41,7 +41,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 import React, { useEffect, useRef } from 'react'
 import Autoplay from 'embla-carousel-autoplay'
-import Link from "next/link"
 
 import * as z from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -129,9 +128,9 @@ export default function Home() {
         </div>
         <div data-scroll data-scroll-speed="0.2" className="basis-3/5 xl:pr-32 flex flex-col justify-center bg-background">
           <div className="text-center xl:text-start flex flex-col pt-4">
-            <p className="text-2xl text-foreground xl:text-8xl xl:pr-8 ">WEB DEVELOPER</p>
+            <p className="text-2xl text-foreground xl:text-8xl">WEB <span className="text-primary">DEVELOPER</span></p>
             <Separator className="xl:my-8 my-4" />
-            <p className="text-2xl text-foreground xl:text-8xl xl:text-end">UI/UX DESIGNER</p>
+            <p className="text-2xl text-foreground xl:text-6xl xl:text-end">UI/UX DESIGNER</p>
           </div>
           <Separator className="xl:my-8 my-4" />
           <ArrowDownCircle data-scroll-to data-scroll-to-href="#Projects" className="animate-bounce mt-12 w-12 h-12 xl:w-24 xl:h-24 mx-auto justify-center" />
@@ -139,8 +138,8 @@ export default function Home() {
       </section>
 
 
-      <section id="Projects" className="pt-24 gap-8 justify-center text-center">
-        <h1 className="text-4xl font-bold">Projects</h1>
+      <section id="Projects" className="pt-24 xl:pt-48 gap-8 justify-center text-center">
+        <h1 className="text-5xl font-bold">Projects</h1>
         <div className="pt-12 px-2">
 
           <Carousel className="w-[75%] mx-auto ot" opts={{
@@ -190,7 +189,7 @@ export default function Home() {
                           <p className="text-l text-foreground">Tools: React, Html, CSS, Node.js, PostgreSQL, Python, Metabase</p>
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">Front-end, Python script to save data from open data source, Docker containers</p>
-                          <Link href="https://fillaridata.savonia.fi"><Button variant="outline">Live site</Button></Link>
+                          <a href="https://fillaridata.savonia.fi" target="_blank" rel="noreferrer"><Button variant="outline">Live site</Button></a>
                         </div>
                       </div>
                     </div>
@@ -442,8 +441,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="About" className="pt-24">
-        <h1 className="text-center text-4xl font-bold">About</h1>
+      <section id="About" className="pt-24 xl:pt-48">
+        <h1 className="text-center text-5xl font-bold">About</h1>
         <Tabs defaultValue="about" className="justify-center text-center pt-6">
           <TabsList>
             <TabsTrigger value="about">About me</TabsTrigger>
@@ -534,7 +533,7 @@ export default function Home() {
 
 
       <section id="Contact">
-        <h1 className="text-4xl font-bold text-center pt-24">Contact me</h1>
+        <h1 className="text-5xl font-bold text-center pt-24">Contact me</h1>
         <div className="xl:w-[30vw] mx-auto text-center p-8"><Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField
