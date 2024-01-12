@@ -3,7 +3,7 @@
 import { Separator } from "@/components/ui/separator"
 import Nav from "@/components/Nav"
 import Image from "next/image"
-import { X, Github, ArrowDownCircle } from "lucide-react"
+import { X, Github, ArrowDownCircle, ArrowUpCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Drawer,
@@ -533,7 +533,10 @@ export default function Home() {
             />
             <Button type="submit">Send message</Button>
           </form>
-        </Form></div>
+        </Form>
+        <ArrowUpCircle data-scroll-to data-scroll-to-href="top" className="animate-bounce mt-12 w-8 h-8 xl:w-12 xl:h-12 mx-auto justify-center rotate-180" />
+
+        </div>
 
 
       </section>
