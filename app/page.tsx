@@ -63,6 +63,15 @@ const formSchema = z.object({
 
 export default function Home() {
 
+  useEffect( () => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  },[])
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -105,7 +114,7 @@ export default function Home() {
       <section className="flex flex-col xl:flex-row">
         <div className="basis-2/5 mt-20 xl:mt-0 h-screen">
           <Image src="/j0nssi.png" alt="J0nssi"
-            className="p-4 mx-auto xl:mx-0"
+            className="xl:p-4 mx-auto xl:mx-0"
             width={807}
             height={600}
             quality={100}
@@ -118,14 +127,14 @@ export default function Home() {
 
           ></Image>
         </div>
-        <div className="basis-3/5 xl:pr-4 flex flex-col justify-center">
-          <div className="text-center xl:text-start flex flex-col">
+        <div data-scroll data-scroll-speed="0.2" className="basis-3/5 xl:pr-4 flex flex-col justify-center bg-background">
+          <div className="text-center xl:text-start flex flex-col pt-4">
             <p className="text-2xl text-foreground xl:text-8xl xl:pr-8 ">WEB DEVELOPER</p>
             <Separator className="xl:my-8 my-4" />
             <p className="text-2xl text-foreground xl:text-8xl xl:text-end xl:pr-4">UI/UX DESIGNER</p>
           </div>
           <Separator className="xl:my-8 my-4" />
-          <Link href="#Projects" className="-my-4 xl:my-0 w-24 mx-auto"><ArrowDownCircle className="animate-bounce mt-12 center w-12 h-12 xl:w-24 xl:h-24 xl:mx-0 mx-auto" /></Link>
+          <ArrowDownCircle data-scroll-to data-scroll-to-href="#Projects" className="animate-bounce mt-12 w-12 h-12 xl:w-24 xl:h-24 mx-auto justify-center" />
         </div>
       </section>
 

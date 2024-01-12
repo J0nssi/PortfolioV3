@@ -5,7 +5,7 @@ import { ModeToggle } from './ui/mode-toggler'
 
 export default function Nav() {
     return (
-        <div className="top-0 fixed flex flex-row justify-end gap-6 items-center bg-gradient-to-b from-primary-foreground to-transparent w-screen px-4 z-20 xl:flex xl:flex-col xl:h-screen xl:w-auto xl:justify-start xl:top-0 xl:pt-4 xl:bg-gradient-to-b xl:from-transparent xl:to-transparent">
+        <div className="top-0 fixed flex flex-row justify-end gap-6 items-center bg-gradient-to-b from-background to-transparent w-screen px-4 z-20 xl:flex xl:flex-col xl:h-screen xl:w-auto xl:justify-start xl:top-0 xl:pt-4 xl:bg-gradient-to-b xl:from-transparent xl:to-transparent">
             <div className='flex mr-auto'>
             <Link href=''>
                 <Image
