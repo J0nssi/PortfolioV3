@@ -452,7 +452,7 @@ export default function Home() {
           <TabsContent value="about">
             <div className='justify-center items-center m-auto lg:p-12 col-span-2 w-[100vw] xl:w-1/3'>
               <p className='p-4 text-xl'>For whatever reason you ended up to my portfolio, welcome. I hope you enjoyed browsing it as much as I enjoyed developing it but let me introduce myself now.</p>
-              <p className='p-4 text-xl'>It all started when I applied to Savonia UAS in 2019 after working about three years in property maintenance. I got into my Bachelor of Engineering, Information Technology studies and three and half years later I'm near the finish line with my studies.</p>
+              <p className='p-4 text-xl'>It all started when I applied to Savonia UAS in 2019 after working about three years in property maintenance. I got into my Bachelor of Engineering, Information Technology studies and four and half years later I'm near the finish line with my studies.</p>
               <p className='p-4 text-xl'>As a web developer I'm trying to help companies and brands to build their online presence, develop eye-cathing websites and compete in rapidly growing digital landscape.</p>
               <p className='p-4 text-xl'>In my sparetime, I'm challenging myself competing in ice hockey or CS2, going to the gym, hanging out with my friends or just relaxing at home.</p>
             </div>
