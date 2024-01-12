@@ -133,7 +133,7 @@ export default function Home() {
             <p className="text-2xl text-foreground xl:text-8xl xl:text-end">UI/UX DESIGNER</p>
           </div>
           <Separator className="xl:my-8 my-4" />
-          <ArrowDownCircle data-scroll-to data-scroll-to-href="#Projects" className="animate-bounce mt-12 w-12 h-12 xl:w-24 xl:h-24 mx-auto justify-center" />
+          <ArrowDownCircle data-scroll-to data-scroll-to-href="#Projects" className="animate-bounce mt-12 w-12 h-12 xl:w-24 xl:h-24 mx-auto justify-center cursor-pointer" />
         </div>
       </section>
 
@@ -579,7 +579,7 @@ export default function Home() {
             <Button type="submit">Send message</Button>
           </form>
         </Form>
-        <ArrowUpCircle data-scroll-to data-scroll-to-href="top" className="animate-bounce mt-12 w-8 h-8 xl:w-12 xl:h-12 mx-auto justify-center" />
+        <ArrowUpCircle data-scroll-to data-scroll-to-href="top" className="animate-bounce mt-12 w-8 h-8 xl:w-12 xl:h-12 mx-auto justify-center cursor-pointer" />
 
         </div>
 
