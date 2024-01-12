@@ -126,7 +126,7 @@ export default function Home() {
 
           ></Image>
         </div>
-        <div data-scroll data-scroll-speed="0.2" className="basis-3/5 xl:pr-32 flex flex-col justify-center bg-background">
+        <div data-scroll data-scroll-speed="0.3" className="basis-3/5 xl:pr-32 flex flex-col justify-center bg-background">
           <div className="text-center xl:text-start flex flex-col pt-4">
             <p className="text-2xl text-foreground xl:text-8xl">WEB <span className="text-primary">DEVELOPER</span></p>
             <Separator className="xl:my-8 my-4" />
