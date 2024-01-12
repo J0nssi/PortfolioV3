@@ -235,7 +235,7 @@ export default function Home() {
                           <p className="text-l text-foreground">Tools: Figma, Wix Studio</p>
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">UI/UX designing, Frontend, Basic SEO, Writing Thesis</p>
-                          <a href="https://www.incoach.fi" target="_blank"><Button variant="outline">Live site</Button></a>
+                          <a href="https://www.incoach.fi" target="_blank" rel="noreferrer"><Button variant="outline">Live site</Button></a>
                         </div>
                       </div>
                     </div>
@@ -281,8 +281,8 @@ export default function Home() {
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">I coded everything myself from scratch, watching tutorials and other portfolios.</p>
                           <div className="flex flex-row justify-center items-center gap-24">
-                          <a href="https://github.com/J0nssi/PortfolioV2" target="_blank"><Button variant="outline">Live site</Button></a>
-                          <a><Github className="scale-125" /></a>
+                          <a href="portfolio-v2-iota-ashy.vercel.app" target="_blank"><Button variant="outline">Live site</Button></a>
+                          <a href="https://github.com/J0nssi/PortfolioV2" target="_blank" ><Github className="scale-125" /></a>
                           </div>
                         </div>
                       </div>
@@ -377,8 +377,55 @@ export default function Home() {
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">Didn't like this at all so I quickly updated my portfolio to V2.</p>
                           <div className="flex flex-row justify-center items-center gap-24">
-                          <a href="https://github.com/J0nssi/Portfolio" target="_blank"><Button variant="outline">Live site</Button></a>
-                          <a><Github className="scale-125" /></a>
+                          <a href="https://j0nssi.github.io/Portfolio/" target="_blank"><Button variant="outline">Live site</Button></a>
+                          <a href="https://github.com/J0nssi/Portfolio" target="_blank"><Github className="scale-125" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </DrawerContent>
+                </Drawer>
+              </CarouselItem>
+
+              <CarouselItem className="xl:basis-1/2">
+                <Drawer>
+                  <DrawerTrigger><Image src="/fps.png" alt="fps"
+                    className="mx-auto"
+                    width={800}
+                    height={600}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority
+
+                  ></Image>
+                  </DrawerTrigger>
+                  <DrawerContent>
+                    <DrawerClose className="absolute top-0 right-0">
+                      <Button variant="outline"><X /></Button>
+                    </DrawerClose>
+                    <div className="text-center">
+                      <DrawerHeader className="p-2 xl:pt-6">
+                        <DrawerTitle className="text-2xl font-bold text-center xl:text-4xl">FPS Game</DrawerTitle>
+                      </DrawerHeader>
+
+                      <div className="p-4 flex flex-col">
+                        <div>
+                          <Image src="/fps.png" alt="fps"
+                            className="mx-auto"
+                            width={800}
+                            height={600}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            priority
+
+                          ></Image>
+                        </div>
+                        <div className="py-6">
+                          <h1 className="text-2xl font-bold pb-2 xl:text-3xl">General</h1>
+                          <p className="text-l text-foreground">School course project, FPS game with different guns, AI mechanics and scoreboard counting.</p>
+                          <p className="text-l text-foreground">Tools: Unity, Blender</p>
+                          <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
+                          <p className="text-l text-foreground pb-6">Gun shooting and recoil, magazine size</p>
+                          <div className="flex flex-row justify-center items-center gap-24">
+                          <a href="https://github.com/J0nssi/movement-fps" target="_blank"><Github className="scale-125" /></a>
                           </div>
                         </div>
                       </div>
@@ -534,7 +581,7 @@ export default function Home() {
             <Button type="submit">Send message</Button>
           </form>
         </Form>
-        <ArrowUpCircle data-scroll-to data-scroll-to-href="top" className="animate-bounce mt-12 w-8 h-8 xl:w-12 xl:h-12 mx-auto justify-center rotate-180" />
+        <ArrowUpCircle data-scroll-to data-scroll-to-href="top" className="animate-bounce mt-12 w-8 h-8 xl:w-12 xl:h-12 mx-auto justify-center" />
 
         </div>
 
