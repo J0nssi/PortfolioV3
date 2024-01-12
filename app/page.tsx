@@ -127,11 +127,11 @@ export default function Home() {
 
           ></Image>
         </div>
-        <div data-scroll data-scroll-speed="0.2" className="basis-3/5 xl:pr-4 flex flex-col justify-center bg-background">
+        <div data-scroll data-scroll-speed="0.2" className="basis-3/5 xl:pr-32 flex flex-col justify-center bg-background">
           <div className="text-center xl:text-start flex flex-col pt-4">
             <p className="text-2xl text-foreground xl:text-8xl xl:pr-8 ">WEB DEVELOPER</p>
             <Separator className="xl:my-8 my-4" />
-            <p className="text-2xl text-foreground xl:text-8xl xl:text-end xl:pr-4">UI/UX DESIGNER</p>
+            <p className="text-2xl text-foreground xl:text-8xl xl:text-end">UI/UX DESIGNER</p>
           </div>
           <Separator className="xl:my-8 my-4" />
           <ArrowDownCircle data-scroll-to data-scroll-to-href="#Projects" className="animate-bounce mt-12 w-12 h-12 xl:w-24 xl:h-24 mx-auto justify-center" />
@@ -190,7 +190,7 @@ export default function Home() {
                           <p className="text-l text-foreground">Tools: React, Html, CSS, Node.js, PostgreSQL, Python, Metabase</p>
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">Front-end, Python script to save data from open data source, Docker containers</p>
-                          <Link href="https://www.google.com"><Button variant="outline">Live site</Button></Link>
+                          <Link href="https://fillaridata.savonia.fi"><Button variant="outline">Live site</Button></Link>
                         </div>
                       </div>
                     </div>
@@ -281,7 +281,7 @@ export default function Home() {
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">I coded everything myself from scratch, watching tutorials and other portfolios.</p>
                           <div className="flex flex-row justify-center items-center gap-24">
-                          <a href="portfolio-v2-iota-ashy.vercel.app" target="_blank"><Button variant="outline">Live site</Button></a>
+                          <a href="https://portfolio-v2-iota-ashy.vercel.app" target="_blank"><Button variant="outline">Live site</Button></a>
                           <a href="https://github.com/J0nssi/PortfolioV2" target="_blank" ><Github className="scale-125" /></a>
                           </div>
                         </div>
@@ -329,8 +329,7 @@ export default function Home() {
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">Vertical and horizontal views. Component layouting.</p>
                           <div className="flex flex-row justify-center items-center gap-24">
-                          <a href="https://github.com/J0nssi/osrs-utility-app-android" target="_blank"><Button variant="outline">Live site</Button></a>
-                          <a><Github className="scale-125" /></a>
+                          <a href="https://github.com/J0nssi/osrs-utility-app-android"><Github className="scale-125" /></a>
                           </div>
                         </div>
                       </div>
