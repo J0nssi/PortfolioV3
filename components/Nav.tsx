@@ -28,10 +28,10 @@ export default function Nav() {
                     priority
                 />
             </a>
-            <a href='' target='_blank'>
+            <a href='/JoonasVaija_CV.pdf' target='_blank'>
                 <Image
                     src="/file_on.svg"
-                    alt="linkedin"
+                    alt="resume"
                     className="dark:invert scale-75 xl:scale-100"
                     width={40}
                     height={40}
