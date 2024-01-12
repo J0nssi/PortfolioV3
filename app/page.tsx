@@ -462,14 +462,14 @@ export default function Home() {
             <div className='justify-center items-center m-auto lg:p-12 col-span-2 w-[85vw] xl:w-1/2'>
               <div>
                 <h2 className='pt-6 tracking-wide font-bold text-2xl'>UI/UX DESIGNER AND FRONTEND DEVELOPER</h2>
-                <p className='text-xl pt-4'>Thesis for Incoach</p>
+                <p className='text-xl pt-4'>Incoach</p>
                 <p className='pt-2'>6/2023 - 2/2024</p>
-                <p className='pt-4'>Created UI/UX design, developed new website for Incoach</p>
+                <p className='pt-4'>Thesis, Created UI/UX design, developed new website for Incoach</p>
               </div>
               <Separator className="my-8" />
               <div>
                 <h2 className='tracking-wide font-bold text-2xl'>IT SUPPORT</h2>
-                <p className='text-xl pt-4'>Istekki</p>
+                <p className='text-xl pt-4'>Istekki Oy</p>
                 <p className='pt-2'>1/2023 - 6/2023</p>
                 <p className='pt-4'>Solved IT support tasks</p>
                 <p className='pt-2'>Pre-installed PCs with right software</p>
@@ -481,7 +481,7 @@ export default function Home() {
               <div>
                 <h2 className='tracking-wide font-bold text-2xl'>WEB DEVELOPER</h2>
                 <p className='text-xl pt-4'>Savonia, Green Data Project, Vilkku-fillarit</p>
-                <p className='pt-2'>6/2023 - 2/2024</p>
+                <p className='pt-2'>6/2022 - 9/2022</p>
                 <p className='pt-4'>Website designing and frontend coding.</p>
                 <p className='pt-2'>Created python scripts to save and calculate data from open data
                   source about Vilkku-fillarit bikes' users and usage.</p>
