@@ -3,7 +3,7 @@
 import { Separator } from "@/components/ui/separator"
 import Nav from "@/components/Nav"
 import Image from "next/image"
-import { X } from "lucide-react"
+import { X, Github, ArrowDownCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Drawer,
@@ -103,7 +103,7 @@ export default function Home() {
       <Nav />
 
       <section className="flex flex-col xl:flex-row">
-        <div className="basis-2/5 mt-20 xl:mt-0 h-screen ">
+        <div className="basis-2/5 mt-20 xl:mt-0 h-screen">
           <Image src="/j0nssi.png" alt="J0nssi"
             className="p-4 mx-auto xl:mx-0"
             width={807}
@@ -120,16 +120,12 @@ export default function Home() {
         </div>
         <div className="basis-3/5 xl:pr-4 flex flex-col justify-center">
           <div className="text-center xl:text-start flex flex-col">
-            <p className="text-2xl text-foreground xl:text-8xl xl:pr-8">WEB DEVELOPER</p>
+            <p className="text-2xl text-foreground xl:text-8xl xl:pr-8 ">WEB DEVELOPER</p>
             <Separator className="xl:my-8 my-4" />
-            <p className="text-2xl text-foreground xl:text-8xl xl:mr-96">UI/UX DESIGNER</p>
+            <p className="text-2xl text-foreground xl:text-8xl xl:text-end xl:pr-4">UI/UX DESIGNER</p>
           </div>
           <Separator className="xl:my-8 my-4" />
-          <div className="flex py-2 gap-2 justify-center xl:justify-start">
-            <Button variant={"outline"} className="xl:p-6"><Link href="#Projects" className="xl:text-xl">Projects</Link></Button>
-            <Button variant={"outline"} className="xl:p-6"><Link href="#About" className="xl:text-xl">About me</Link></Button>
-            <Button variant={"outline"} className="xl:p-6"><Link href="#Contact" className="xl:text-xl">Contact</Link></Button>
-          </div>
+          <Link href="#Projects" className="-my-4 xl:my-0 w-24 mx-auto"><ArrowDownCircle className="animate-bounce mt-12 center w-12 h-12 xl:w-24 xl:h-24 xl:mx-0 mx-auto" /></Link>
         </div>
       </section>
 
@@ -185,7 +181,7 @@ export default function Home() {
                           <p className="text-l text-foreground">Tools: React, Html, CSS, Node.js, PostgreSQL, Python, Metabase</p>
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">Front-end, Python script to save data from open data source, Docker containers</p>
-                          <Link href="https://www.google.com"><Button variant="default">Live site</Button></Link>
+                          <Link href="https://www.google.com"><Button variant="outline">Live site</Button></Link>
                         </div>
                       </div>
                     </div>
@@ -230,7 +226,7 @@ export default function Home() {
                           <p className="text-l text-foreground">Tools: Figma, Wix Studio</p>
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">UI/UX designing, Frontend, Basic SEO, Writing Thesis</p>
-                          <a href="https://www.incoach.fi" target="_blank"><Button variant="default">Live site</Button></a>
+                          <a href="https://www.incoach.fi" target="_blank"><Button variant="outline">Live site</Button></a>
                         </div>
                       </div>
                     </div>
@@ -275,7 +271,10 @@ export default function Home() {
                           <p className="text-l text-foreground">Tools: Next.js, Tailwind CSS, CSS, Framer Motion</p>
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">I coded everything myself from scratch, watching tutorials and other portfolios.</p>
-                          <a href="https://github.com/J0nssi/PortfolioV2" target="_blank"><Button variant="default">Live site</Button></a>
+                          <div className="flex flex-row justify-center items-center gap-24">
+                          <a href="https://github.com/J0nssi/PortfolioV2" target="_blank"><Button variant="outline">Live site</Button></a>
+                          <a><Github className="scale-125" /></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -320,7 +319,10 @@ export default function Home() {
                           <p className="text-l text-foreground">Tools: Kotlin</p>
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">Vertical and horizontal views. Component layouting.</p>
-                          <a href="https://github.com/J0nssi/osrs-utility-app-android" target="_blank"><Button variant="default">Live site</Button></a>
+                          <div className="flex flex-row justify-center items-center gap-24">
+                          <a href="https://github.com/J0nssi/osrs-utility-app-android" target="_blank"><Button variant="outline">Live site</Button></a>
+                          <a><Github className="scale-125" /></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -365,7 +367,10 @@ export default function Home() {
                           <p className="text-l text-foreground">Tools: React, CSS</p>
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">Didn't like this at all so I quickly updated my portfolio to V2.</p>
-                          <a href="https://github.com/J0nssi/Portfolio" target="_blank"><Button variant="default">Live site</Button></a>
+                          <div className="flex flex-row justify-center items-center gap-24">
+                          <a href="https://github.com/J0nssi/Portfolio" target="_blank"><Button variant="outline">Live site</Button></a>
+                          <a><Github className="scale-125" /></a>
+                          </div>
                         </div>
                       </div>
                     </div>
