@@ -146,7 +146,6 @@ export default function Home() {
           <Carousel className="w-[75%] mx-auto" opts={{
             align: "start",
             loop: true,
-            dragFree: true,
           }}
             plugins={[
               Autoplay({
