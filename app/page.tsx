@@ -10,6 +10,7 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
+  DrawerDescription,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
@@ -155,6 +156,10 @@ export default function Home() {
             <CarouselContent>
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
+                  <DrawerDescription className="text-xl text-foreground">   
+                  Vilkku-fillarit datapage
+                  </DrawerDescription>
+                  <Separator className="mb-4 xl:mb-6 mt-1 xl:mt-2 w-2/3 mx-auto" />
                   <DrawerTrigger className="w-full">
                   <AspectRatio ratio={16 / 9}>
                       <Image src="/vilkku.PNG" alt="Vilkkufillarit"
@@ -166,6 +171,7 @@ export default function Home() {
                   ></Image>
                   </AspectRatio>
                   </DrawerTrigger>
+
                   <DrawerContent>
                     <DrawerClose className="absolute top-0 right-0">
                       <Button variant="outline"><X /></Button>
@@ -174,7 +180,6 @@ export default function Home() {
                       <DrawerHeader className="p-2 xl:pt-6">
                         <DrawerTitle className="text-2xl font-bold text-center xl:text-4xl">Vilkku-fillarit datapage</DrawerTitle>
                       </DrawerHeader>
-
                       <div className="p-4 flex flex-col">
                         <div>
                           <Image src="/vilkku.PNG" alt="Vilkkufillarit"
@@ -202,6 +207,10 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
+                <DrawerDescription className="text-xl text-foreground">   
+                  Incoach webpage
+                  </DrawerDescription>
+                  <Separator className="mb-4 xl:mb-6 mt-1 xl:mt-2 w-2/3 mx-auto" />
                   <DrawerTrigger className="w-full">
                     <AspectRatio ratio={16 / 9}>
                     <Image src="/incoach.png" alt="Incoach"
@@ -249,6 +258,10 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
+                <DrawerDescription className="text-xl text-foreground">   
+                  Portfolio V2
+                  </DrawerDescription>
+                  <Separator className="mb-4 xl:mb-6 mt-1 xl:mt-2 w-2/3 mx-auto" />
                   <DrawerTrigger className="w-full">
                   <AspectRatio ratio={16 / 9}>
                     <Image src="/portfolio2.PNG" alt="PortfolioV2"
@@ -298,6 +311,10 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
+                <DrawerDescription className="text-xl text-foreground">   
+                  OSRS Utility App
+                  </DrawerDescription>
+                  <Separator className="mb-4 xl:mb-6 mt-1 xl:mt-2 w-2/3 mx-auto" />
                   <DrawerTrigger className="w-full">
                   <AspectRatio ratio={16 / 9}>
                     <Image src="/osrs1.jpg" alt="OSRS"
@@ -347,6 +364,10 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
+                <DrawerDescription className="text-xl text-foreground">   
+                  Portfolio V1
+                  </DrawerDescription>
+                  <Separator className="mb-4 xl:mb-6 mt-1 xl:mt-2 w-2/3 mx-auto" />
                   <DrawerTrigger className="w-full">
                   <AspectRatio ratio={16 / 9}>
                     <Image src="/portfolio1.PNG" alt="PortfolioV1"
@@ -397,6 +418,10 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
+                <DrawerDescription className="text-xl text-foreground">   
+                  FPS Game
+                  </DrawerDescription>
+                  <Separator className="mb-4 xl:mb-6 mt-1 xl:mt-2 w-2/3 mx-auto" />
                   <DrawerTrigger className="w-full">
                   <AspectRatio ratio={16 / 9}>
                     <Image src="/fps.png" alt="fps"
