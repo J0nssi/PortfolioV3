@@ -3,6 +3,7 @@
 import { Separator } from "@/components/ui/separator"
 import Nav from "@/components/Nav"
 import Image from "next/image"
+import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { X, Github, ArrowDownCircle, ArrowUpCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -142,9 +143,10 @@ export default function Home() {
         <h1 className="text-5xl font-bold">Projects</h1>
         <div className="pt-12 px-2">
 
-          <Carousel className="w-[75%] mx-auto ot" opts={{
+          <Carousel className="w-[75%] mx-auto" opts={{
             align: "start",
             loop: true,
+            dragFree: true,
           }}
             plugins={[
               Autoplay({
@@ -154,14 +156,16 @@ export default function Home() {
             <CarouselContent>
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
-                  <DrawerTrigger><Image src="/vilkku.PNG" alt="Vilkkufillarit"
+                  <DrawerTrigger className="w-full">
+                  <AspectRatio ratio={16 / 9}>
+                      <Image src="/vilkku.PNG" alt="Vilkkufillarit"
                     className="mx-auto"
-                    width={800}
-                    height={600}
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority
 
                   ></Image>
+                  </AspectRatio>
                   </DrawerTrigger>
                   <DrawerContent>
                     <DrawerClose className="absolute top-0 right-0">
@@ -199,14 +203,16 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
-                  <DrawerTrigger><Image src="/incoach.png" alt="Incoach"
+                  <DrawerTrigger className="w-full">
+                    <AspectRatio ratio={16 / 9}>
+                    <Image src="/incoach.png" alt="Incoach"
                     className="mx-auto"
-                    width={800}
-                    height={600}
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority
 
                   ></Image>
+                  </AspectRatio>
                   </DrawerTrigger>
                   <DrawerContent>
                     <DrawerClose className="absolute top-0 right-0">
@@ -244,14 +250,15 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
-                  <DrawerTrigger><Image src="/portfolio2.PNG" alt="PortfolioV2"
+                  <DrawerTrigger className="w-full">
+                  <AspectRatio ratio={16 / 9}>
+                    <Image src="/portfolio2.PNG" alt="PortfolioV2"
                     className="mx-auto"
-                    width={800}
-                    height={600}
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority
-
                   ></Image>
+                  </AspectRatio>
                   </DrawerTrigger>
                   <DrawerContent>
                     <DrawerClose className="absolute top-0 right-0">
@@ -264,7 +271,7 @@ export default function Home() {
 
                       <div className="p-4 flex flex-col">
                         <div>
-                          <Image src="/portfolio2.PNG" alt="JV-Logo"
+                          <Image src="/portfolio2.PNG" alt="Portfolio2"
                             className="mx-auto"
                             width={800}
                             height={600}
@@ -292,14 +299,16 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
-                  <DrawerTrigger><Image src="/osrs1.jpg" alt="OSRS"
-                    className="mx-auto"
-                    width={800}
-                    height={600}
+                  <DrawerTrigger className="w-full">
+                  <AspectRatio ratio={16 / 9}>
+                    <Image src="/osrs1.jpg" alt="OSRS"
+                    className="mx-auto object-cover"
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority
 
                   ></Image>
+                  </AspectRatio>
                   </DrawerTrigger>
                   <DrawerContent>
                     <DrawerClose className="absolute top-0 right-0">
@@ -339,14 +348,16 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
-                  <DrawerTrigger><Image src="/portfolio1.PNG" alt="PortfolioV1"
+                  <DrawerTrigger className="w-full">
+                  <AspectRatio ratio={16 / 9}>
+                    <Image src="/portfolio1.PNG" alt="PortfolioV1"
                     className="mx-auto"
-                    width={800}
-                    height={600}
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority
 
                   ></Image>
+                  </AspectRatio>
                   </DrawerTrigger>
                   <DrawerContent>
                     <DrawerClose className="absolute top-0 right-0">
@@ -370,7 +381,7 @@ export default function Home() {
                         </div>
                         <div className="py-6">
                           <h1 className="text-2xl font-bold pb-2 xl:text-3xl">General</h1>
-                          <p className="text-l text-foreground">Responsive portfolio webpage for myself, V1 edition.</p>
+                          <p className="text-l text-foreground">Portfolio webpage for myself, V1 edition.</p>
                           <p className="text-l text-foreground">Tools: React, CSS</p>
                           <h1 className="pt-6 text-2xl font-bold pb-2 xl:text-3xl">Responsibilities</h1>
                           <p className="text-l text-foreground pb-6">Didn't like this at all so I quickly updated my portfolio to V2.</p>
@@ -387,14 +398,16 @@ export default function Home() {
 
               <CarouselItem className="xl:basis-1/2">
                 <Drawer>
-                  <DrawerTrigger><Image src="/fps.png" alt="fps"
+                  <DrawerTrigger className="w-full">
+                  <AspectRatio ratio={16 / 9}>
+                    <Image src="/fps.png" alt="fps"
                     className="mx-auto"
-                    width={800}
-                    height={600}
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority
 
                   ></Image>
+                  </AspectRatio>
                   </DrawerTrigger>
                   <DrawerContent>
                     <DrawerClose className="absolute top-0 right-0">
@@ -435,7 +448,7 @@ export default function Home() {
 
             </CarouselContent>
             <CarouselPrevious />
-            <CarouselNext />
+            <CarouselNext /> 
           </Carousel>
 
         </div>
