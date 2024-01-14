@@ -30,6 +30,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import emailjs from '@emailjs/browser';
+import glitch from "@/components/glitch.js"
 
 import {
   Carousel,
@@ -63,6 +64,7 @@ const formSchema = z.object({
 
 
 export default function Home() {
+  
 
   useEffect( () => {
     (
@@ -103,12 +105,11 @@ export default function Home() {
         console.log('FAILED...', error);
         toast("Something went wrong, please try again later.")
       });
-
-      
-      
   }
 
   return (
+
+    
     <main className="">
       <Nav />
 
@@ -130,7 +131,7 @@ export default function Home() {
         </div>
         <div data-scroll data-scroll-speed="0.3" className="basis-3/5 xl:pr-32 flex flex-col justify-center bg-background">
           <div className="text-center xl:text-start flex flex-col pt-4">
-            <p className="text-2xl text-foreground xl:text-8xl">WEB <span className="text-primary">DEVELOPER</span></p>
+            <p id="dev" onMouseEnter={glitch} data-value="WEB DEVELOPER" className="text-2xl text-primary xl:text-8xl">WEB DEVELOPER</p>
             <Separator className="xl:my-8 my-4" />
             <p className="text-2xl text-foreground xl:text-8xl xl:text-end">UI/UX DESIGNER</p>
           </div>
