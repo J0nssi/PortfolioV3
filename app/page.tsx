@@ -30,7 +30,6 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import emailjs from '@emailjs/browser';
-import glitch from "@/components/glitch.js"
 
 import {
   Carousel,
@@ -131,9 +130,11 @@ export default function Home() {
         </div>
         <div data-scroll data-scroll-speed="0.3" className="basis-3/5 xl:pr-32 flex flex-col justify-center bg-background">
           <div className="text-center xl:text-start flex flex-col pt-4">
-            <p id="dev" onMouseEnter={glitch} data-value="WEB DEVELOPER" className="text-2xl text-primary xl:text-8xl">WEB DEVELOPER</p>
-            <Separator className="xl:my-8 my-4" />
-            <p className="text-2xl text-foreground xl:text-8xl xl:text-end">UI/UX DESIGNER</p>
+            
+          <Separator className="xl:my-8 my-4" />
+            <p className="text-3xl xl:text-9xl xl:tracking-tighter pb-2 xl:pb-8 font-bold">JO<span className="text-primary">ON</span>AS VAIJA</p>
+            <p className="text-2xl xl:text-8xl tracking-widest xl:pb-2"><span className="text-primary">WEB DEVELOPER</span></p>
+            <p className="text-2xl xl:text-8xl tracking-widest">UI/<span className="text-primary">UX</span> DESIGNER</p>
           </div>
           <Separator className="xl:my-8 my-4" />
           <ArrowDownCircle data-scroll-to data-scroll-to-href="#Projects" className="animate-bounce mt-12 w-12 h-12 xl:w-24 xl:h-24 mx-auto justify-center cursor-pointer" />
