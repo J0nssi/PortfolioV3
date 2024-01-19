@@ -135,9 +135,10 @@ export default function Home() {
             <p className="text-3xl xl:text-9xl xl:tracking-tighter pb-2 xl:pb-8 font-bold">JO<span className="text-primary">ON</span>AS VAIJA</p>
             <p className="text-2xl xl:text-8xl tracking-widest xl:pb-2"><span className="text-primary">WEB DEVELOPER</span></p>
             <p className="text-2xl xl:text-8xl tracking-widest">UI/<span className="text-primary">UX</span> DESIGNER</p>
+            <Separator className="xl:my-8 my-4" />
           </div>
-          <Separator className="xl:my-8 my-4" />
-          <ArrowDownCircle data-scroll-to data-scroll-to-href="#Projects" className="animate-bounce mt-12 w-12 h-12 xl:w-24 xl:h-24 mx-auto justify-center cursor-pointer" />
+
+          <ArrowDownCircle data-scroll-to data-scroll-to-href="#Projects" className="animate-bounce mt-6 w-12 h-12 xl:w-24 xl:h-24 mx-auto xl:ml-[15vw] cursor-pointer" />
         </div>
       </section>
 
