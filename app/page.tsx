@@ -16,6 +16,15 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
 import { toast } from "sonner"
 
 import {
@@ -83,11 +92,14 @@ export default function Home() {
     },
   })
 
-
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
+    toast("Sending email...");
+    const disable = document.getElementById("disable") as HTMLButtonElement | null;
+    disable?.setAttribute('disabled', '');
+
     console.log(values.message)
     const templateParams = {
       from_name: values.user_name,
@@ -100,6 +112,7 @@ export default function Home() {
         console.log('SUCCESS!', response.status, response.text);
         toast("Email has been sent.")
         form.reset();
+        disable?.removeAttribute('disabled');
       }, function (error) {
         console.log('FAILED...', error);
         toast("Something went wrong, please try again later.")
@@ -574,7 +587,14 @@ export default function Home() {
 
       <section id="Contact">
         <h1 className="text-5xl font-bold text-center pt-24">Contact me</h1>
-        <div className="xl:w-[30vw] mx-auto text-center p-8"><Form {...form}>
+        <div className="xl:w-[30vw] mx-auto text-center p-8">
+        <Card>
+  <CardHeader>
+    <CardTitle>Send email</CardTitle>
+    <CardDescription>If you have anything to ask, send me a message.</CardDescription>
+  </CardHeader>
+  <CardContent>
+  <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField
               control={form.control}
@@ -616,9 +636,12 @@ export default function Home() {
 
               )}
             />
-            <Button type="submit">Send message</Button>
+            <Button type="submit" id="disable">Send message</Button>
           </form>
         </Form>
+  </CardContent>
+</Card>
+         
         <ArrowUpCircle data-scroll-to data-scroll-to-href="top" className="animate-bounce mt-12 w-8 h-8 xl:w-12 xl:h-12 mx-auto justify-center cursor-pointer" />
 
         </div>
